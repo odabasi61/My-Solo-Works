@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<style>
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;}
+
+html {font-size: 62.5%;}
+
+body {font-size: 1.6rem;
+font-weight: 400;
+font-family: 'poppins', sans-serif;
+margin: 0 auto; line-height: 1;
+background-color: #03071f;
+}
+
+.section {text-align: center; position: relative;}
+.my {display: inline-block; margin-top: .1rem; font-size: 7rem; letter-spacing: 3px; font-weight: bolder; color: #495057;}
+h1 {font-size: 8rem; margin-top: .1rem; color: white; font-weight: bolder;}
+.header-s {color: #2f9e44; letter-spacing: 3px;}
+.icons {position: absolute; top: 100%; right: 5%;}
+ul li {list-style: none; }
+ul {display: flex; flex-direction: column; float: right; gap: 3rem;}
+
+.div3-icon {width: 3rem; height: 3rem; padding: 1.5rem; border-radius: 50%; background-color: #868e96; color: #dee2e6; transition: all .3s;}
+.div3-icon:hover {transform: scale(1.1); background-color: #2f9e44;}
+
+.btn-download {display: inline-block; font-size: 2rem; text-decoration: none; border: 1px solid white; border-radius: 30px; padding: 1.3rem 2rem; color: white; transition: all .5s;}
+.btn-download:hover {transform: scale(1.1); border: none; background-color: #2f9e44; cursor: pointer;}
+
+.main {margin: 2rem 20rem 20rem 20rem; display: grid; grid-template-columns: 0.8fr 1fr; gap: 4rem;}
+.sec-left {flex: 0 0 50%; height: 40rem;}
+.info {padding-bottom: 2rem; font-size: 3.2rem; color: white; text-transform: uppercase;}
+.about {padding-bottom: 2rem; font-size: 1.8rem; line-height: 1.5; color: white;}
+
+.sec-right {padding-left: 5rem; display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; text-align: center;}
+.box-s {font-size: 4rem; font-weight: bolder; color: #2f9e44; padding-top: 3rem; display: inline-block;}
+.box-p {font-size: 1.8rem; color: white; padding-top: 2rem;}
+
+.box {border: 1px solid #495057; transition: all .4s;}
+.box:hover {border: 1px solid #2f9e44; transform: translateY(-3px);}
+
+.heading {text-align: center; }
+.heading-h {display: inline; padding: 5rem; border-top: 1px solid #495057; font-size: 3.2rem; color: white; text-transform: uppercase;}
+.heading-skills {margin: 5rem 20rem; display: grid; gap: 4rem; grid-template-columns: 1fr 1fr;}
+.skills-s {color: white; font-size: 2rem; font-weight: bolder; margin-bottom: .5rem; display: inline-block;}
+.gap {background-image: linear-gradient(to right, #2f9e44 75%, #495057 25%); margin-bottom: 3rem; }
+.gap--node {background-image: linear-gradient(to right, #2f9e44 80%, #495057 20%); margin-bottom: 3rem; }
+.gap--css {background-image: linear-gradient(to right, #2f9e44 90%, #495057 10%); margin-bottom: 3rem; }
+.gap--pyt {background-image: linear-gradient(to right, #2f9e44 65%, #495057 35%); margin-bottom: 3rem; }
+.gap--react {background-image: linear-gradient(to right, #2f9e44 75%, #495057 25%); margin-bottom: 3rem; }
+.gap--java {background-image: linear-gradient(to right, #2f9e44 80%, #495057 20%); margin-bottom: 3rem; }
+
+
+</style>
+    </head>
+<body>
+    <section class="section">
+        <div class="heading">
+            <span class="my">MY</span>
+            <h1>ABOUT <span class="header-s">ME</span></h1>
+            <span class="my">STATS</span>
+        </div>
+        <div class="icons">
+            <ul>
+                <li><a href="index.html"><ion-icon class="div3-icon" name="home-outline"></ion-icon></a></li>
+                <li><a href="about.html"><ion-icon class="div3-icon" name="person-outline"></ion-icon></a></li>
+                <li><a href="portfolio.html"><ion-icon class="div3-icon" name="briefcase-outline"></ion-icon></a></li>
+                <li><a href="blog.html"><ion-icon class="div3-icon" name="chatbox-ellipses-outline"></ion-icon></a></li>
+                <li><a href="contact.html"><ion-icon class="div3-icon" name="mail-outline"></ion-icon></a></li>
+            </ul>
+            </div>
+    </section>
+    
+    <section class="main">
+        <div class="sec-left">
+            <h2 class="info">Information About Me</h2>
+            <p class="about">The company itself is a very successful company. It will turn out that nothing blinded by hard work will succeed. You owe error and pain, but no one is bound to them or to his pleasure.</p>
+            <p class="about">Let him who is chosen by music avoid training with pain, for we accuse him of being born with labor pains. Whence. The company itself is a very successful company. He was not relieved of these needs.</p>
+            <a href="cv.docx" class="btn-download btn-white">Download my CV</a>
+        </div>
+
+        <div class="sec-right">
+            <div class="box">
+                <span class="box-s">500+</span>
+                <p class="box-p">Projects</p>
+                <p class="box-p">Completed</p>
+            </div>
+            <div class="box">
+                <span class="box-s">10+</span>
+                <p class="box-p">Years of</p>
+                <p class="box-p">Experience</p>
+            </div>
+            <div class="box">
+                <span class="box-s">500+</span>
+                <p class="box-p">Pleasured</p>
+                <p class="box-p">Clients</p>
+            </div>
+            <div class="box">
+                <span class="box-s">700+</span>
+                <p class="box-p">Customer</p>
+                <p class="box-p">Reviews</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="article">
+        <div class="heading">
+            <h3 class="heading-h">My Skills</h3>
+        </div>
+    <div class="heading-skills">
+        <div class="skills-left">
+            <div class="skills">
+                <span class="skills-s">HTML5 / 75%</span>
+                <div class="gap">&nbsp;</div>
+            </div>
+            <div class="skills">
+                <span class="skills-s">NODEJS / 80%</span>
+                <div class="gap gap--node">&nbsp;</div>
+            </div>
+            <div class="skills">
+                <span class="skills-s">CSS3 / 90%</span>
+                <div class="gap gap--css">&nbsp;</div>
+            </div>
+        </div>
+
+        <div class="skills-right">
+            <div class="skills">
+                <span class="skills-s">PYTHON / 65%</span>
+                <div class="gap gap--pyt">&nbsp;</div>
+            </div>
+            <div class="skills">
+                <span class="skills-s">REACT / 75%</span>
+                <div class="gap gap--react">&nbsp;</div>
+            </div>
+            <div class="skills">
+                <span class="skills-s">JAVASCRIPT / 80%</span>
+                <div class="gap gap--java">&nbsp;</div>
+            </div>
+        </div>
+    </div>
+    </section>
+</body>
+</html>

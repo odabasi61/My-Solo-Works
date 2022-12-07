@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<style>
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;}
+
+html {font-size: 62.5%;}
+
+body {font-size: 1.6rem;
+font-weight: 400;
+font-family: 'poppins', sans-serif;
+margin: 0 auto; line-height: 1;
+background-color: #03071f;
+}
+
+.section {text-align: center; position: relative;}
+.my {display: inline-block; margin-top: .1rem; font-size: 7rem; letter-spacing: 3px; font-weight: bolder; color: #495057;}
+h1 {font-size: 8rem; margin-top: .1rem; color: white; font-weight: bolder;}
+.header-s {color: #2f9e44; letter-spacing: 3px;}
+.icons {position: absolute; top: 100%; right: 5%;}
+ul li {list-style: none; }
+ul {display: flex; flex-direction: column; float: right; gap: 3rem;}
+.div2-icon {padding: 1rem; height: 2.5rem; width: 2.5rem; border-radius: 50%; color: white; background-color: #333; margin-left: 1.5rem; transition: all .5s;}
+.div2-icon:hover {color: #333; background-color: white; transform: scale(1.2); cursor: pointer;}
+.div3-icon {width: 3rem; height: 3rem; padding: 1.5rem; border-radius: 50%; background-color: #868e96; color: #dee2e6; transition: all .3s;}
+.div3-icon:hover {transform: scale(1.1); background-color: #2f9e44;}
+
+.section2 {justify-items: center; margin: 5rem 15rem; display: grid; grid-template-columns: 1fr 1fr 1fr; grid-template-rows: 1fr 1fr 1fr; gap: 2rem;}
+.sec2-parts {width: 80%; position: relative; }
+.div-img {width: 100%; height: 100%; border-radius: 14px;}
+.sec2-div1 {height: 100%; z-index: 1; }
+.sec2-div2 {width: 100%; height: 100%; position: absolute; top: 0; left: 0; text-align: center; z-index: -1; background-color: rgb(47, 158, 68, 0.8); border-radius: 15px;}
+.sec2-parts:hover .sec2-div2 {z-index: 10; transform: scale(1.01);}
+
+h3 {padding: 8rem 0 2rem 0;}
+
+
+</style>
+</head>
+<body>
+    <section class="section">
+        <div class="heading">
+            <span class="my">MY</span>
+            <h1>MY <span class="header-s">PORTFOLIO</span></h1>
+            <span class="my">WORK</span>
+        </div>
+        <div class="icons">
+            <ul>
+                <li><a href="index.html"><ion-icon class="div3-icon" name="home-outline"></ion-icon></a></li>
+                <li><a href="about.html"><ion-icon class="div3-icon" name="person-outline"></ion-icon></a></li>
+                <li><a href="portfolio.html"><ion-icon class="div3-icon" name="briefcase-outline"></ion-icon></a></li>
+                <li><a href="blog.html"><ion-icon class="div3-icon" name="chatbox-ellipses-outline"></ion-icon></a></li>
+                <li><a href="contact.html"><ion-icon class="div3-icon" name="mail-outline"></ion-icon></a></li>
+            </ul>
+            </div>
+    </section>
+    
+    <section class="section2">
+<div class="sec2-parts">
+<div class="sec2-div1">
+    <img class="div-img" src="img/portfolio1.jpg" alt="html">
+</div>
+<div class="sec2-div2">
+    <h3>Project source</h3>
+    <div class="div-icons">
+    <ion-icon class="div2-icon" name="logo-facebook"></ion-icon>
+    <ion-icon class="div2-icon" name="logo-github"></ion-icon>
+    <ion-icon class="div2-icon" name="logo-youtube"></ion-icon>
+    </div>
+</div>
+</div>
+
+<div class="sec2-parts">
+    <div class="sec2-div1">
+        <img class="div-img" src="img/portfolio2.jpg" alt="slashes">
+    </div>
+    <div class="sec2-div2">
+        <h3>Project source</h3>
+        <div class="div-icons">
+        <ion-icon class="div2-icon" name="logo-facebook"></ion-icon>
+        <ion-icon class="div2-icon" name="logo-github"></ion-icon>
+        <ion-icon class="div2-icon" name="logo-youtube"></ion-icon>
+        </div>
+    </div>
+    </div>
+
+    <div class="sec2-parts">
+        <div class="sec2-div1">
+            <img class="div-img" src="img/portfolio3.jpg" alt="browsers">
+        </div>
+        <div class="sec2-div2">
+            <h3>Project source</h3>
+            <div class="div-icons">
+            <ion-icon class="div2-icon" name="logo-facebook"></ion-icon>
+            <ion-icon class="div2-icon" name="logo-github"></ion-icon>
+            <ion-icon class="div2-icon" name="logo-youtube"></ion-icon>
+            </div>
+        </div>
+        </div>
+
+        <div class="sec2-parts">
+            <div class="sec2-div1">
+                <img class="div-img" src="img/portfolio4.jpg" alt="git-lab">
+             </div>
+             <div class="sec2-div2">
+               <h3>Project source</h3>
+               <div class="div-icons">
+                <ion-icon class="div2-icon" name="logo-facebook"></ion-icon>
+                <ion-icon class="div2-icon" name="logo-github"></ion-icon>
+                <ion-icon class="div2-icon" name="logo-youtube"></ion-icon>
+                </div>
+            </div>
+            </div>
+    
+            <div class="sec2-parts">
+                <div class="sec2-div1">
+                    <img class="div-img" src="img/portfolio5.jpg" alt="codes on laptop">
+                </div>
+                <div class="sec2-div2">
+                    <h3>Project source</h3>
+                    <div class="div-icons">
+                    <ion-icon class="div2-icon" name="logo-facebook"></ion-icon>
+                    <ion-icon class="div2-icon" name="logo-github"></ion-icon>
+                    <ion-icon class="div2-icon" name="logo-youtube"></ion-icon>
+                    </div>
+                </div>
+                </div>
+       
+                <div class="sec2-parts">
+                    <div class="sec2-div1">
+                        <img class="div-img" src="img/portfolio6.jpg" alt="unsplash">
+                    </div>
+                    <div class="sec2-div2">
+                        <h3>Project source</h3>
+                        <div class="div-icons">
+                        <ion-icon class="div2-icon" name="logo-facebook"></ion-icon>
+                        <ion-icon class="div2-icon" name="logo-github"></ion-icon>
+                        <ion-icon class="div2-icon" name="logo-youtube"></ion-icon>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="sec2-parts">
+                        <div class="sec2-div1">
+                            <img class="div-img" src="img/portfolio7.jpg" alt="screen of codes">
+                         </div>
+                         <div class="sec2-div2">
+                           <h3>Project source</h3>
+                           <div class="div-icons">
+                            <ion-icon class="div2-icon" name="logo-facebook"></ion-icon>
+                            <ion-icon class="div2-icon" name="logo-github"></ion-icon>
+                            <ion-icon class="div2-icon" name="logo-youtube"></ion-icon>
+                            </div>
+                        </div>
+                        </div>
+                
+                        <div class="sec2-parts">
+                            <div class="sec2-div1">
+                                <img class="div-img" src="img/portfolio8.jpg" alt="blur ball">
+                            </div>
+                            <div class="sec2-div2">
+                                <h3>Project source</h3>
+                                <div class="div-icons">
+                                <ion-icon class="div2-icon" name="logo-facebook"></ion-icon>
+                                <ion-icon class="div2-icon" name="logo-github"></ion-icon>
+                                <ion-icon class="div2-icon" name="logo-youtube"></ion-icon>
+                                </div>
+                            </div>
+                            </div>
+                   
+                            <div class="sec2-parts">
+                                <div class="sec2-div1">
+                                    <img class="div-img" src="img/portfolio9.jpg" alt="cell phone with codes">
+                                </div>
+                                <div class="sec2-div2">
+                                    <h3>Project source</h3>
+                                    <div class="div-icons">
+                                    <ion-icon class="div2-icon" name="logo-facebook"></ion-icon>
+                                    <ion-icon class="div2-icon" name="logo-github"></ion-icon>
+                                    <ion-icon class="div2-icon" name="logo-youtube"></ion-icon>
+                                    </div>
+                                </div>
+                                </div>
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <style>
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;}
+
+html {font-size: 62.5%;}
+
+body {font-size: 1.6rem;
+font-weight: 400;
+font-family: 'poppins', sans-serif;
+margin: 0 auto; line-height: 1;
+background-color: #03071f;
+}
+
+.section {text-align: center; position: relative;}
+.my {display: inline-block; margin-top: .1rem; font-size: 7rem; letter-spacing: 3px; font-weight: bolder; color: #495057;}
+h1 {font-size: 8rem; margin-top: .1rem; color: white; font-weight: bolder;}
+.header-s {color: #2f9e44; letter-spacing: 3px;}
+.icons {position: absolute; top: 100%; right: 5%;}
+ul li {list-style: none; }
+ul {display: flex; flex-direction: column; float: right; gap: 3rem;}
+.div2-icon {width: 3rem; height: 3rem; padding: 1.5rem; border-radius: 50%; background-color: #868e96; color: #dee2e6; transition: all .3s;}
+.div2-icon:hover {transform: scale(1.1); background-color: #2f9e44;}
+
+.section2 {justify-items: center; margin: 5rem 15rem; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2rem;}
+.sec2-parts {width: 80%; background-color: #2a2e35; border-radius: 5px; transition: all .5s;}
+.sec2-parts:hover .sec2-div1 {transform: scale(1.1);}
+.sec2-parts:hover {transform: translateY(-5px);}
+.sec2-div1 {transition: all .5s;}
+.div-img {width: 100%; padding-bottom: 1rem; border-radius: 5px 5px 0 0;}
+
+.sec2-a:link,
+.sec2-a:visited {padding: 1rem; display: inline-block; text-decoration: none; font-size: 2rem; line-height: 1.5; color: white; transition: all .5s;}
+.sec2-a:hover {color: #2f9e44; }
+.sec2-p {color: #b2becd; font-size: 1.8rem; line-height: 1.3; padding: 1rem;}
+
+
+    </style>
+</head>
+<body>
+    <section class="section">
+        <div class="heading">
+            <span class="my">MY</span>
+            <h1>MY <span class="header-s">BLOGS</span></h1>
+            <span class="my">BLOGS</span>
+        </div>
+        <div class="icons">
+            <ul>
+                <li><a href="index.html"><ion-icon class="div2-icon" name="home-outline"></ion-icon></a></li>
+                <li><a href="about.html"><ion-icon class="div2-icon" name="person-outline"></ion-icon></a></li>
+                <li><a href="portfolio.html"><ion-icon class="div2-icon" name="briefcase-outline"></ion-icon></a></li>
+                <li><a href="blog.html"><ion-icon class="div2-icon" name="chatbox-ellipses-outline"></ion-icon></a></li>
+                <li><a href="contact.html"><ion-icon class="div2-icon" name="mail-outline"></ion-icon></a></li>
+            </ul>
+            </div>
+    </section>
+
+    <div class="section2">
+        <div class="sec2-parts">
+        <div class="sec2-div1">
+            <img class="div-img" src="img/blog1.jpg" alt="laptop and tea">
+        </div>
+        <div class="sec2-div2">
+        <a class="sec2-a" href="#">How to Create Your Own Website</a>
+        <p class="sec2-p">If the customer is very smart, he or she will be able to achieve the desired result. Pleasure born of pains, blinded by their refusal?</p>
+        </div>
+        </div>
+
+        <div class="sec2-parts">
+            <div class="sec2-div1">
+                <img class="div-img" src="img/blog2.jpg" alt="books">
+            </div>
+            <div class="sec2-div2">
+            <a class="sec2-a" href="#">How to Become an Expert in Web Design</a>
+            <p class="sec2-p">If the customer is very smart, he or she will be able to achieve the desired result. Pleasure born of pains, blinded by their refusal?</p>
+            </div>
+        </div>
+
+        <div class="sec2-parts">
+            <div class="sec2-div1">
+                <img class="div-img" src="img/blog3.jpg" alt="office">
+            </div>
+            <div class="sec2-div2">
+            <a class="sec2-a" href="#">Become a Web Designer in 10 Days</a>
+            <p class="sec2-p">If the customer is very smart, he or she will be able to achieve the desired result. Pleasure born of pains, blinded by their refusal?</p>
+            </div>
+        </div>
+
+        <div class="sec2-parts">
+            <div class="sec2-div1">
+                <img class="div-img" src="img/blog4.jpg" alt="codes on computer screen">
+            </div>
+            <div class="sec2-div2">
+            <a class="sec2-a" href="#">Debbuging made easy with Web Inspector</a>
+            <p class="sec2-p">If the customer is very smart, he or she will be able to achieve the desired result. Pleasure born of pains, blinded by their refusal?</p>
+            </div>
+        </div>
+
+        <div class="sec2-parts">
+            <div class="sec2-div1">
+                <img class="div-img" src="img/blog5.jpg" alt="laptop screen">
+            </div>
+            <div class="sec2-div2">
+            <a class="sec2-a" href="#">Get started with Web Design and UI Design</a>
+            <p class="sec2-p">If the customer is very smart, he or she will be able to achieve the desired result. Pleasure born of pains, blinded by their refusal?</p>
+            </div>
+        </div>
+
+        <div class="sec2-parts">
+            <div class="sec2-div1">
+                <img class="div-img" src="img/blog6.jpg" alt="codes on the screen">
+            </div>
+            <div class="sec2-div2">
+            <a class="sec2-a" href="#">This is what you need to know about Web Design</a>
+            <p class="sec2-p">If the customer is very smart, he or she will be able to achieve the desired result. Pleasure born of pains, blinded by their refusal?</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

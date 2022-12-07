@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Carousel Component</title>
+
+    <style>
+      /*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+      /* Main Color #087f5b, grey color #343a40*/
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        color: #343a40;
+        line-height: 1;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(221, 219, 219);
+      }
+      .btn {
+        cursor: pointer;
+        height: 50px;
+        width: 50px;
+        border: 2px solid grey;
+        border-radius: 50%;
+        color: grey;
+        position: absolute;
+      }
+      .btn:hover {
+        color: #343a40;
+        background-color: grey;
+      }
+      .btn-icon--1 {
+        left: 0;
+        top: 50%;
+        transform: translate(-150%, -50%);
+        background-color: rgb(221, 219, 219);
+      }
+      .btn-icon--2 {
+        right: 0;
+        top: 50%;
+        transform: translate(150%, -50%);
+        background-color: rgb(221, 219, 219);
+      }
+      .carousel {
+        display: flex;
+        position: relative;
+        flex: 0 0 200px;
+        gap: 30px;
+        margin-top: 300px;
+      }
+      h2 {
+        margin-top: 15px;
+        margin-left: 10px;
+        margin-bottom: 15px;
+      }
+      p {
+        margin-bottom: 15px;
+        margin-left: 10px;
+        line-height: 1.2;
+      }
+
+      .cities {
+        background-color: white;
+        width: 280px;
+        height: 450px;
+        box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 7px;
+        overflow: hidden;
+        transition: all 0.5s;
+      }
+      .cities:hover {
+        transform: scale(1.06);
+      }
+      .cities img {
+        transition: all 0.5s;
+      }
+      .cities img:hover {
+        transform: scale(1.06);
+      }
+
+      .btn-more {
+        margin-left: 10px;
+        margin-bottom: 15px;
+        background-color: blueviolet;
+        color: white;
+        border: none;
+        height: 30px;
+        width: 60px;
+        cursor: pointer;
+        transition: all 0.5s;
+      }
+      .btn-more:hover {
+        transform: translateY(-3px);
+      }
+      .btn-more:active {
+        transform: translate(0);
+      }
+      .dots {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        display: flex;
+        gap: 5px;
+        transform: translate(-50%, 52px);
+      }
+      .dot {
+        height: 12px;
+        width: 12px;
+        background-color: grey;
+        border: 2px solid black;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all 0.5s;
+      }
+      .dot:hover {
+        transform: scale(1.1);
+      }
+
+      .dot--fill {
+        background-color: rgb(48, 47, 47);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="carousel">
+      <button class="btn btn-icon--1">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 19.5L8.25 12l7.5-7.5"
+          />
+        </svg>
+      </button>
+      <div class="cities">
+        <img src="london.jpg" alt="London" width="280" height="270" />
+        <h2 class="london-h">London</h2>
+        <p class="london-p">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+          possimus, minus.
+        </p>
+        <button class="btn-more">More ></button>
+      </div>
+      <div class="cities">
+        <img src="new york.jpg" alt="New York" width="280" height="270" />
+        <h2 class="new york-h">New York</h2>
+        <p class="new york-p">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore
+          accusamus totam.
+        </p>
+        <button class="btn-more">More ></button>
+      </div>
+      <div class="cities">
+        <img src="paris.jpg" alt="Paris" width="280" height="270" />
+        <h2 class="paris-h">Paris</h2>
+        <p class="paris-p">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+          repellendus.
+        </p>
+        <button class="btn-more">More ></button>
+      </div>
+      <button class="btn btn-icon--2">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M8.25 4.5l7.5 7.5-7.5 7.5"
+          />
+        </svg>
+      </button>
+      <div class="dots">
+        <button class="dot dot--fill">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+      </div>
+    </div>
+  </body>
+</html>

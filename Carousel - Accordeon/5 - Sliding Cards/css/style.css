@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.66rem;
+  font-weight: 400;
+  line-height: 1;
+  font-family: "open sans", sans-serif;
+  background-color: #e9ecef;
+  width: auto;
+}
+
+.section1 {
+  position: relative;
+  display: grid;
+  grid-template-columns: 3rem 1fr 1fr 1fr 3rem;
+  gap: 3rem;
+  width: 150rem;
+  margin: 15rem auto;
+  margin-bottom: 0;
+  justify-items: center;
+}
+
+.section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  width: 150rem;
+  height: 50rem;
+  margin: 0 auto;
+}
+
+.div1 {
+  width: 35rem;
+  height: 50rem;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  transition: all 0.5s;
+}
+.div1:hover {
+  transform: scale(1.1);
+}
+
+.div2 {
+  border-radius: 7px 7px 0 0;
+  height: 18rem;
+  position: relative;
+  display: flex;
+  gap: 6rem;
+  justify-content: right;
+  justify-items: center;
+  background-color: #7950f2;
+}
+.div2 img {
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 45%;
+  position: absolute;
+  top: 23%;
+  left: 27%;
+  transition: all 0.5s;
+}
+.div2 img:hover {
+  transform: scale(1.1);
+}
+
+.div3 {
+  background-color: white;
+  border-radius: 0 0 7px 7px;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1.5rem;
+}
+.icons .icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  fill: #e9ecef;
+  cursor: pointer;
+}
+.icons .icon:hover {
+  transform: scale(1.1);
+}
+
+h1 {
+  font-size: 4rem;
+  color: white;
+  background-color: #7950f2;
+  display: inline-block;
+  padding: 2rem;
+  border-radius: 7px;
+  transition: all 0.5s;
+}
+h1:hover {
+  transform: scale(1.1);
+}
+
+h2 {
+  font-size: 2.4rem;
+  padding-top: 4rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+  padding: 1rem 0;
+}
+
+.stars {
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 2rem;
+  justify-content: center;
+  justify-items: center;
+}
+.stars .abc {
+  width: 2.4rem;
+  height: 2.4rem;
+  fill: #7950f2;
+}
+.stars .abc:hover {
+  transform: scale(1.1);
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 2rem;
+  justify-content: center;
+  justify-items: center;
+}
+.buttons .btn-div {
+  width: 10rem;
+  height: 4rem;
+  border-radius: 20px;
+  background-color: #7950f2;
+  color: white;
+  font-weight: 700;
+  border: none;
+  transition: all 0.5s;
+}
+.buttons .btn-div:hover {
+  transform: translateY(-3px);
+  background-color: #ced4da;
+  color: #7950f2;
+}
+.buttons .btn-div:active {
+  transform: translate(0);
+}
+
+.btn-left {
+  position: absolute;
+  top: 32%;
+  left: 0;
+}
+
+.btn-right {
+  position: absolute;
+  top: 32%;
+  right: 0;
+}
+
+.btn-left,
+.btn-right {
+  width: 6rem;
+  height: 6rem;
+  font-size: 5rem;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.btn-left:hover,
+.btn-right:hover {
+  transform: scale(1.1);
+}
+
+.dots {
+  left: 50%;
+  bottom: 40%;
+  display: flex;
+  gap: 10px;
+  margin: 0;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+}
+
+.dot:hover {
+  transform: scale(1.1);
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  background-color: grey;
+  border: 2px solid black;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.dot--fill {
+  background-color: rgb(48, 47, 47);
+}
+
+/*# sourceMappingURL=style.css.map */
